@@ -40,6 +40,10 @@
         & button {
             background-color: $color_eb7d4b;
         }
+        & button:hover {
+            background-color: $color_17c2a4;
+            text-decoration: underline;
+        }
     }
 }
 .header {
@@ -52,6 +56,7 @@
         font-size: 16px;
         text-transform: uppercase;
         color: $wite;
+        transition-duration: 0.3s;
         &:hover {
             background-color: $color_643a79;
             padding: 5px 14px;
@@ -71,6 +76,7 @@
         font-size: 24px;
         font-weight: 600;
         letter-spacing: $ls;
+        transition-duration: 300ms;
     }
     li:hover {
         color: $color_30bae7;

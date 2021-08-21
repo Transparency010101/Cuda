@@ -107,6 +107,9 @@ h6 {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: #fff;
+  -webkit-transition-duration: 550ms;
+          transition-duration: 550ms;
+  border-radius: 3.5px;
 }
 
 .content {
@@ -170,6 +173,10 @@ h6 {
 .hi__button button {
   background-color: #eb7d4b;
 }
+.hi__button button:hover {
+  background-color: #17c2a4;
+  text-decoration: underline;
+}
 
 .header {
   -webkit-box-align: center;
@@ -185,6 +192,8 @@ h6 {
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 .navigation a:hover {
   background-color: #643a79;
@@ -205,6 +214,8 @@ h6 {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 .contact li:hover {
   color: #30bae7;

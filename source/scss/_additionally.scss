@@ -8,6 +8,7 @@ $color_eb7d4b: #eb7d4b;
 $color_30bae7: #30bae7;
 $color_344b8e: #344b8e;
 $ls: 0.02em;
+$color_17c2a4: #17c2a4;
 // ! Шаблоны
 %container {
     width: 1060px;
@@ -21,6 +22,8 @@ $ls: 0.02em;
     font-weight: 600;
     letter-spacing: $ls;
     color: $wite;
+    transition-duration: 550ms;
+    border-radius: 3.5px;
 }
 // ! Миксины
 @mixin flex-param($jc, $ai) {
