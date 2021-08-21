@@ -25,6 +25,26 @@ $color_17c2a4: #17c2a4;
     transition-duration: 550ms;
     border-radius: 3.5px;
 }
+%line {
+    margin: 20px auto;
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
+}
+%title {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+%sub-title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $wite;
+    margin: auto;
+}
 // ! Миксины
 @mixin flex-param($jc, $ai) {
     display: flex;

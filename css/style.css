@@ -112,6 +112,29 @@ h6 {
   border-radius: 3.5px;
 }
 
+.line {
+  margin: 20px auto;
+  width: 87px;
+  height: 4px;
+  opacity: 0.14;
+  background-color: #000000;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 29px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.sub-title {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: auto;
+}
+
 .content {
   font-family: "Titillium Web", sans-serif;
   -webkit-box-flex: 1;
@@ -207,7 +230,7 @@ h6 {
 }
 
 .contact {
-  margin: 45px 0;
+  padding: 45px 0;
 }
 .contact li {
   color: #fff;
@@ -219,4 +242,45 @@ h6 {
 }
 .contact li:hover {
   color: #30bae7;
+}
+
+.service {
+  background-color: #17c2a4;
+  text-align: center;
+  height: 750px;
+  color: #fff;
+}
+.service__title {
+  padding-top: 110px;
+}
+.service__sub-title {
+  width: 600px;
+}
+.provide {
+  margin-top: 300px;
+}
+.provide__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.provide__item {
+  letter-spacing: 0.02em;
+}
+.provide__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.provide__text {
+  width: 200px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: auto;
 }
