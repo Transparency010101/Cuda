@@ -19,7 +19,7 @@
     @include flex-param(center, center);
 }
 .flex-sb {
-    @include flex-param(center);
+    @include flex-param(space-between);
 }
 .button {
     @extend %button;
@@ -189,5 +189,9 @@
     }
 
     &__social-network {
+        margin: 0 10px;
+        & i {
+            font-size: 1.7em;
+        }
     }
 }
