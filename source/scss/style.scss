@@ -4,7 +4,11 @@
 .container {
     @extend %container;
 }
+.pbd {
+    @extend %pbd;
+}
 .content {
+    // $ Основной сонтент
     font-family: "Titillium Web", sans-serif;
     flex: 1 1 auto;
 }
@@ -15,6 +19,7 @@
     @include flex-param(center, center);
 }
 .flex-sb {
+    @include flex-param(center);
 }
 .button {
     @extend %button;
@@ -53,6 +58,9 @@
         }
         & button:hover {
             background-color: $color_17c2a4;
+        }
+        & button:active {
+            background-color: $color_30bae7;
             text-decoration: underline;
         }
     }
@@ -106,18 +114,13 @@
     &__sub-title {
         width: 600px;
     }
-    &__line {
-    }
 }
 // ! Provide
 .provide {
     margin-top: 300px;
-    &__row {
-        display: flex;
-        justify-content: space-between;
-    }
     &__item {
         letter-spacing: 0.02em;
+        padding: 0 15px;
     }
     &__title {
         margin-bottom: 30px;
@@ -132,5 +135,15 @@
         line-height: 24px;
         font-weight: 300;
         margin: auto;
+    }
+}
+// ! Team
+.team {
+    padding: 70px 0;
+    &__title {
+        color: $color_3c4761;
+    }
+    &__sub-title {
+        color: $color_3c4761;
     }
 }
