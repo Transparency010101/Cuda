@@ -32,6 +32,11 @@ $color_ebcc8d: #ebcc8d;
     transition-duration: 500ms;
     border-radius: 3.5px;
 }
+%grey-circle {
+    background-color: #878787;
+    border-radius: 50%;
+    margin: 0 auto;
+}
 %line {
     // $ Основные свойства линии
     margin: 20px auto;

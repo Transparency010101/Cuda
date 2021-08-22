@@ -5,7 +5,7 @@
     border: none;
     outline: none;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
@@ -108,8 +108,14 @@ h6 {
     letter-spacing: 0.02em;
     color: #fff;
     -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
+    transition-duration: 500ms;
     border-radius: 3.5px;
+}
+
+.grey-circle {
+    background-color: #878787;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 .line {
@@ -157,8 +163,8 @@ h6 {
 .content {
     font-family: "Titillium Web", sans-serif;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .flex-sb-cnt {
@@ -166,11 +172,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .flex-center {
@@ -178,11 +184,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .flex-sb {
@@ -190,11 +196,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
 }
 
 .wrapper {
@@ -204,8 +210,8 @@ h6 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .hi {
@@ -237,8 +243,8 @@ h6 {
 
 .header {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 130px;
 }
 
@@ -250,7 +256,7 @@ h6 {
     text-transform: uppercase;
     color: #fff;
     -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 .navigation a:hover {
     background-color: #643a79;
@@ -272,7 +278,7 @@ h6 {
     font-weight: 600;
     letter-spacing: 0.02em;
     -webkit-transition-duration: 300ms;
-            transition-duration: 300ms;
+    transition-duration: 300ms;
 }
 .contact li a:hover {
     color: #30bae7;
@@ -323,9 +329,6 @@ h6 {
 .team__photo {
     width: 200px;
     height: 200px;
-    background-color: #878787;
-    border-radius: 50%;
-    margin: 0 auto;
 }
 .team__name {
     margin: 40px 0 15px 0;
@@ -350,7 +353,7 @@ h6 {
 }
 
 .skils {
-    padding: 100px 0;
+    margin-top: 50px;
 }
 .skils__sub-title {
     text-align: center;
@@ -427,7 +430,7 @@ h6 {
     letter-spacing: 0.02em;
     color: #393939;
     -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
+    transition-duration: 500ms;
     background-color: #ebcc8d;
     padding: 10px 23px;
     border-radius: 5px;
@@ -438,7 +441,10 @@ h6 {
 }
 
 .portfolio__item {
-    margin: 10px 15px;
+    margin: 10px 0;
+}
+.portfolio__item img {
+    width: 500px;
 }
 .portfolio__text {
     margin: 10px 0 50px 0;
@@ -446,4 +452,44 @@ h6 {
     font-size: 18px;
     letter-spacing: 0.02em;
     color: #393939;
+}
+
+.say {
+    color: #fff;
+    background-color: #d74680;
+    padding: 50px 0;
+}
+.say__sub-title {
+    text-align: center;
+}
+
+.poeple__row {
+    margin: 0 0 100px 0;
+}
+.poeple__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.poeple__circle {
+    width: 99px;
+    height: 99px;
+    margin-right: 20px;
+}
+.poeple__item {
+    letter-spacing: 0.02em;
+}
+.poeple__text {
+    font-size: 21px;
+    line-height: 31px;
+    font-style: italic;
+    width: 330px;
+}
+.poeple__name {
+    margin: 15px 0px 0;
+}
+.poeple__specialty {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffdd99;
 }

@@ -44,6 +44,9 @@
 .sub-title {
     @extend %sub-title;
 }
+.grey-circle {
+    @extend %grey-circle;
+}
 // ! Hi
 .hi {
     background-color: $color_87509c;
@@ -154,9 +157,6 @@
     &__photo {
         width: 200px;
         height: 200px;
-        background-color: #878787;
-        border-radius: 50%;
-        margin: 0 auto;
     }
     &__name {
         margin: 40px 0 15px 0;
@@ -183,7 +183,7 @@
 }
 // ! Skils
 .skils {
-    padding: 100px 0;
+    margin-top: 50px;
     &__sub-title {
         text-align: center;
     }
@@ -272,7 +272,10 @@
 // ! Portfolio
 .portfolio {
     &__item {
-        margin: 10px 15px;
+        margin: 10px 0;
+        & img {
+            width: 500px;
+        }
     }
     &__text {
         margin: 10px 0 50px 0;
@@ -280,5 +283,50 @@
         font-size: 18px;
         letter-spacing: $ls;
         color: #393939;
+    }
+}
+// ! Say
+.say {
+    color: $wite;
+    background-color: $color_d74680;
+    padding: 50px 0;
+    &__sub-title {
+        text-align: center;
+    }
+}
+// ! Poeple
+.poeple {
+    &__row {
+        margin: 0 0 100px 0;
+    }
+    &__body {
+        display: flex;
+    }
+    &__circle {
+        width: 99px;
+        height: 99px;
+        margin-right: 20px;
+    }
+
+    &__item {
+        letter-spacing: $ls;
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 31px;
+        font-style: italic;
+
+        width: 330px;
+    }
+
+    &__name {
+        margin: 15px 0px 0;
+    }
+
+    &__specialty {
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffdd99;
     }
 }
