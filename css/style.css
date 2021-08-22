@@ -292,14 +292,18 @@ h6 {
 }
 
 .provide {
-  margin-top: 300px;
+  margin-top: 130px;
 }
 .provide__item {
   letter-spacing: 0.02em;
   padding: 0 15px;
 }
+.provide i {
+  font-size: 8em;
+  margin-bottom: 40px;
+}
 .provide__title {
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 .provide__text {
   margin: auto;
@@ -369,15 +373,31 @@ h6 {
 }
 .schedule__count--blue {
   border: 10px solid #30bae7;
+  border-top: 10px solid #dfe8ed;
+}
+.schedule__count--blue:hover {
+  color: #30bae7;
 }
 .schedule__count--red {
   border: 10px solid #d74680;
+  border-left: 10px solid #dfe8ed;
+}
+.schedule__count--red:hover {
+  color: #d74680;
 }
 .schedule__count--green {
   border: 10px solid #15c7a8;
+  border-left: 10px solid #dfe8ed;
+}
+.schedule__count--green:hover {
+  color: #15c7a8;
 }
 .schedule__count--orange {
   border: 10px solid #eb7d4b;
+  border-top: 10px solid #dfe8ed;
+}
+.schedule__count--orange:hover {
+  color: #eb7d4b;
 }
 .schedule__sub-title {
   color: #3c4761;

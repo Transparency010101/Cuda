@@ -123,13 +123,17 @@
 }
 // ! Provide
 .provide {
-    margin-top: 300px;
+    margin-top: 130px;
     &__item {
         letter-spacing: 0.02em;
         padding: 0 15px;
     }
+    & i {
+        font-size: 8em;
+        margin-bottom: 40px;
+    }
     &__title {
-        margin-bottom: 30px;
+        margin: 20px 0;
     }
     &__text {
         margin: auto;
@@ -196,20 +200,35 @@
     &__count {
         font-size: 4em;
         margin-bottom: 20px;
-
         padding: 45px 30px;
         border-radius: 50%;
         &--blue {
             border: 10px solid $color_30bae7;
+            border-top: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_30bae7;
+            }
         }
         &--red {
             border: 10px solid $color_d74680;
+            border-left: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_d74680;
+            }
         }
         &--green {
             border: 10px solid $color_15c7a8;
+            border-left: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_15c7a8;
+            }
         }
         &--orange {
             border: 10px solid $color_eb7d4b;
+            border-top: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_eb7d4b;
+            }
         }
     }
     &__sub-title {
