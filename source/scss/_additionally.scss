@@ -14,6 +14,8 @@ $color_d74680: #d74680;
 $color_15c7a8: #15c7a8;
 $color_dfe8ed: #dfe8ed;
 $color_ebcc8d: #ebcc8d;
+$color_273a71: #273a71;
+
 // ! Шаблоны
 %container {
     // $ Ограничивающий контейнер
@@ -35,7 +37,6 @@ $color_ebcc8d: #ebcc8d;
 %grey-circle {
     background-color: #878787;
     border-radius: 50%;
-    margin: 0 auto;
 }
 %line {
     // $ Основные свойства линии

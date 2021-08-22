@@ -289,7 +289,6 @@
 .say {
     color: $wite;
     background-color: $color_d74680;
-    padding: 50px 0;
     &__sub-title {
         text-align: center;
     }
@@ -316,7 +315,6 @@
         font-size: 21px;
         line-height: 31px;
         font-style: italic;
-
         width: 330px;
     }
 
@@ -328,5 +326,45 @@
         font-size: 18px;
         line-height: 26px;
         color: #ffdd99;
+    }
+}
+// ! Touch
+.touch {
+    background-color: $color_344b8e;
+    padding: 70px 0;
+    &__sub-title {
+        text-align: center;
+    }
+}
+// ! Form
+.form {
+    margin-top: 50px;
+    &__row input {
+        width: 390px;
+        height: 56px;
+        background-color: $color_273a71;
+        padding: 14px;
+        margin: 0 25px;
+        color: $wite;
+        border-radius: 5px;
+    }
+    &__textarea {
+        width: 840px;
+        color: $wite;
+        height: 200px;
+        background-color: $color_273a71;
+        margin: 30px auto 0 auto;
+        padding: 10px;
+    }
+    &__button {
+        & button {
+            background-color: $color_30bae7;
+        }
+        & button:hover {
+            background-color: $color_17c2a4;
+        }
+        & button:active {
+            text-decoration: underline;
+        }
     }
 }
