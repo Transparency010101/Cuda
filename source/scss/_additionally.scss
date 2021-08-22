@@ -13,6 +13,7 @@ $color_e7f1f8: #e7f1f8;
 $color_d74680: #d74680;
 $color_15c7a8: #15c7a8;
 $color_dfe8ed: #dfe8ed;
+$color_ebcc8d: #ebcc8d;
 // ! Шаблоны
 %container {
     // $ Ограничивающий контейнер
@@ -23,7 +24,7 @@ $color_dfe8ed: #dfe8ed;
     // $ Основные свойства кнопки
     width: 293px;
     height: 70px;
-    margin: 60px 0;
+    margin: 60px auto;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: $ls;
