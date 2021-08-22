@@ -139,12 +139,7 @@
 .meet {
     background-color: $color_e7f1f8;
     padding: 100px 0;
-    &__title {
-        color: $color_3c4761;
-    }
-    &__sub-title {
-        color: $color_3c4761;
-    }
+    color: $color_3c4761;
 }
 // ! Team
 .team {
@@ -183,5 +178,41 @@
         & i {
             font-size: 1.7em;
         }
+    }
+}
+// ! Skils
+.skils {
+    padding: 100px 0;
+    &__sub-title {
+        text-align: center;
+    }
+}
+// ! Schedule
+.schedule {
+    margin-top: 80px;
+    &__item {
+        text-align: center;
+    }
+    &__count {
+        font-size: 4em;
+        margin-bottom: 20px;
+
+        padding: 45px 30px;
+        border-radius: 50%;
+        &--blue {
+            border: 10px solid $color_30bae7;
+        }
+        &--red {
+            border: 10px solid $color_d74680;
+        }
+        &--green {
+            border: 10px solid $color_15c7a8;
+        }
+        &--orange {
+            border: 10px solid $color_eb7d4b;
+        }
+    }
+    &__sub-title {
+        color: #3c4761;
     }
 }

@@ -5,7 +5,7 @@
   border: none;
   outline: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
@@ -108,7 +108,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #fff;
   -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
   border-radius: 3.5px;
 }
 
@@ -157,8 +157,8 @@ h6 {
 .content {
   font-family: "Titillium Web", sans-serif;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .flex-sb-cnt {
@@ -166,11 +166,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-center {
@@ -178,11 +178,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .flex-sb {
@@ -190,11 +190,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: normal;
-      -ms-flex-align: normal;
-          align-items: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
 }
 
 .wrapper {
@@ -204,8 +204,8 @@ h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .hi {
@@ -237,8 +237,8 @@ h6 {
 
 .header {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 130px;
 }
 
@@ -250,7 +250,7 @@ h6 {
   text-transform: uppercase;
   color: #fff;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .navigation a:hover {
   background-color: #643a79;
@@ -272,7 +272,7 @@ h6 {
   font-weight: 600;
   letter-spacing: 0.02em;
   -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .contact li a:hover {
   color: #30bae7;
@@ -308,11 +308,6 @@ h6 {
 .meet {
   background-color: #e7f1f8;
   padding: 100px 0;
-}
-.meet__title {
-  color: #3c4761;
-}
-.meet__sub-title {
   color: #3c4761;
 }
 
@@ -351,4 +346,39 @@ h6 {
 }
 .team__social-network i {
   font-size: 1.7em;
+}
+
+.skils {
+  padding: 100px 0;
+}
+.skils__sub-title {
+  text-align: center;
+}
+
+.schedule {
+  margin-top: 80px;
+}
+.schedule__item {
+  text-align: center;
+}
+.schedule__count {
+  font-size: 4em;
+  margin-bottom: 20px;
+  padding: 45px 30px;
+  border-radius: 50%;
+}
+.schedule__count--blue {
+  border: 10px solid #30bae7;
+}
+.schedule__count--red {
+  border: 10px solid #d74680;
+}
+.schedule__count--green {
+  border: 10px solid #15c7a8;
+}
+.schedule__count--orange {
+  border: 10px solid #eb7d4b;
+}
+.schedule__sub-title {
+  color: #3c4761;
 }
