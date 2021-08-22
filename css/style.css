@@ -140,6 +140,20 @@ h6 {
   padding: 0 15px;
 }
 
+.mini-text {
+  width: 200px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.mini-title {
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .content {
   font-family: "Titillium Web", sans-serif;
   -webkit-box-flex: 1;
@@ -286,16 +300,8 @@ h6 {
 }
 .provide__title {
   margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .provide__text {
-  width: 200px;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
   margin: auto;
 }
 
@@ -327,10 +333,6 @@ h6 {
 }
 .team__name {
   margin: 40px 0 15px 0;
-  font-size: 24px;
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .team__specialty {
   font-size: 16px;
@@ -342,10 +344,6 @@ h6 {
   text-decoration: underline;
 }
 .team__text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  width: 200px;
   margin: 15px auto;
 }
 .team__social-network {

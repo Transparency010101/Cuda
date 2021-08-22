@@ -55,6 +55,18 @@ $color_e7f1f8: #e7f1f8;
 %pbd {
     padding: 0 15px;
 }
+%mini-text {
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+%mini-title {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 // ! Миксины
 @mixin flex-param($jc, $ai: normal) {
     // $ Миксин для разных flex нужжд
