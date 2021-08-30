@@ -1,0 +1,43 @@
+// ! Say
+.say {
+    color: $wite;
+    background-color: $color_d74680;
+    &__sub-title {
+        text-align: center;
+    }
+}
+// ! Poeple
+.poeple {
+    &__row {
+        margin: 0 0 100px 0;
+    }
+    &__body {
+        display: flex;
+    }
+    &__circle {
+        width: 99px;
+        height: 99px;
+        margin-right: 20px;
+    }
+
+    &__item {
+        letter-spacing: $ls;
+    }
+
+    &__text {
+        font-size: 21px;
+        line-height: 31px;
+        font-style: italic;
+        width: 330px;
+    }
+
+    &__name {
+        margin: 15px 0px 0;
+    }
+
+    &__specialty {
+        font-size: 18px;
+        line-height: 26px;
+        color: #ffdd99;
+    }
+}

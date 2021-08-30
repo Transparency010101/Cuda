@@ -1,0 +1,28 @@
+// ! Service
+.service {
+    background-color: $color_17c2a4;
+    text-align: center;
+    color: $wite;
+    padding: 80px 0;
+    &__sub-title {
+        width: 600px;
+    }
+}
+// ! Provide
+.provide {
+    margin-top: 130px;
+    &__item {
+        letter-spacing: 0.02em;
+        padding: 0 15px;
+    }
+    & i {
+        font-size: 8em;
+        margin-bottom: 40px;
+    }
+    &__title {
+        margin: 20px 0;
+    }
+    &__text {
+        margin: auto;
+    }
+}

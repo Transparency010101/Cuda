@@ -1,0 +1,51 @@
+// ! Skils
+.skils {
+    margin-top: 50px;
+    &__sub-title {
+        text-align: center;
+    }
+}
+// ! Schedule
+.schedule {
+    margin: 80px 0;
+    &__item {
+        text-align: center;
+    }
+    &__count {
+        font-size: 4em;
+        margin-bottom: 20px;
+        padding: 45px 30px;
+        border-radius: 50%;
+        &--blue {
+            border: 10px solid $color_30bae7;
+            border-top: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_30bae7;
+            }
+        }
+        &--red {
+            border: 10px solid $color_d74680;
+            border-left: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_d74680;
+            }
+        }
+        &--green {
+            border: 10px solid $color_15c7a8;
+            border-left: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_15c7a8;
+            }
+        }
+        &--orange {
+            border: 10px solid $color_eb7d4b;
+            border-top: 10px solid $color_dfe8ed;
+            &:hover {
+                color: $color_eb7d4b;
+            }
+        }
+    }
+    &__sub-title {
+        color: #3c4761;
+    }
+}

@@ -1,0 +1,46 @@
+// ! Hi
+.hi {
+    background-color: $color_87509c;
+    height: 560px;
+    padding: 30px 0 0 0;
+    &__text {
+        font-size: 42.2px;
+        line-height: 48px;
+        font-weight: 700;
+        color: $color_f7f3ea;
+        text-align: center;
+        margin: auto;
+    }
+    &__button {
+        margin: 60px auto;
+        & button {
+            background-color: $color_eb7d4b;
+        }
+        & button:hover {
+            background-color: $color_17c2a4;
+        }
+        & button:active {
+            background-color: $color_30bae7;
+            text-decoration: underline;
+        }
+    }
+}
+// ! Header
+.header {
+    align-items: center;
+    margin-bottom: 130px;
+}
+.navigation {
+    word-spacing: 40px;
+    a {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $wite;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $color_643a79;
+            padding: 5px 14px;
+            border-radius: 5px;
+        }
+    }
+}

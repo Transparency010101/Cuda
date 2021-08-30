@@ -1,5 +1,4 @@
 @import "_zero";
-@import "_additionally";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
 .container {
     @extend %container;
@@ -47,324 +46,99 @@
 .grey-circle {
     @extend %grey-circle;
 }
-// ! Hi
-.hi {
-    background-color: $color_87509c;
-    height: 560px;
-    padding: 30px 0 0 0;
-    &__text {
-        font-size: 42.2px;
-        line-height: 48px;
-        font-weight: 700;
-        color: $color_f7f3ea;
-        text-align: center;
-        margin: auto;
-    }
-    &__button {
-        margin: 60px auto;
-        & button {
-            background-color: $color_eb7d4b;
-        }
-        & button:hover {
-            background-color: $color_17c2a4;
-        }
-        & button:active {
-            background-color: $color_30bae7;
-            text-decoration: underline;
-        }
-    }
+
+// ! Перемменые
+$color_87509c: #87509c;
+$wite: #fff;
+$color_f7f3ea: #f7f3ea;
+$color_643a79: #643a79;
+$color_eb7d4b: #eb7d4b;
+$color_30bae7: #30bae7;
+$color_344b8e: #344b8e;
+$ls: 0.02em;
+$color_17c2a4: #17c2a4;
+$color_3c4761: #3c4761;
+$color_e7f1f8: #e7f1f8;
+$color_d74680: #d74680;
+$color_15c7a8: #15c7a8;
+$color_dfe8ed: #dfe8ed;
+$color_ebcc8d: #ebcc8d;
+$color_273a71: #273a71;
+
+// ! Шаблоны
+%container {
+    // $ Ограничивающий контейнер
+    width: 1045px;
+    margin: 0 auto;
 }
-// ! Header
-.header {
-    align-items: center;
-    margin-bottom: 130px;
+%button {
+    // $ Основные свойства кнопки
+    width: 293px;
+    height: 70px;
+    margin: 60px auto;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: $ls;
+    color: $wite;
+    transition-duration: 500ms;
+    border-radius: 3.5px;
 }
-.navigation {
-    word-spacing: 40px;
-    a {
-        font-size: 16px;
-        text-transform: uppercase;
-        color: $wite;
-        transition-duration: 0.3s;
-        &:hover {
-            background-color: $color_643a79;
-            padding: 5px 14px;
-            border-radius: 5px;
-        }
-    }
+%grey-circle {
+    background-color: #878787;
+    border-radius: 50%;
 }
-// ! Footer
-.footer {
-    background-color: $color_344b8e;
-    height: 110px;
+%line {
+    // $ Основные свойства линии
+    margin: 20px auto;
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
 }
-.contact {
-    padding: 45px 0;
-    li a {
-        color: $wite;
-        font-size: 24px;
-        font-weight: 600;
-        letter-spacing: $ls;
-        transition-duration: 300ms;
-    }
-    li a:hover {
-        color: $color_30bae7;
-    }
-}
-// ! Service
-.service {
-    background-color: $color_17c2a4;
+%title {
+    // $ Основные свойства заголовков
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     text-align: center;
-    color: $wite;
-    padding: 80px 0;
-    &__sub-title {
-        width: 600px;
-    }
 }
-// ! Provide
-.provide {
-    margin-top: 130px;
-    &__item {
-        letter-spacing: 0.02em;
-        padding: 0 15px;
-    }
-    & i {
-        font-size: 8em;
-        margin-bottom: 40px;
-    }
-    &__title {
-        margin: 20px 0;
-    }
-    &__text {
-        margin: auto;
-    }
+%sub-title {
+    // $  Основные свойства под заголовка
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    margin: auto;
+    width: 650px;
 }
-// ! Meet
-.meet {
-    background-color: $color_e7f1f8;
-    padding: 100px 0;
-    color: $color_3c4761;
+%pbd {
+    padding: 0 15px;
 }
-// ! Team
-.team {
-    margin-top: 80px;
-    &__item {
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: $color_3c4761;
-    }
-
-    &__photo {
-        width: 200px;
-        height: 200px;
-    }
-    &__name {
-        margin: 40px 0 15px 0;
-    }
-    &__specialty {
-        font-size: 16px;
-        line-height: 18px;
-        letter-spacing: $ls;
-        color: #30bae7;
-    }
-    &__specialty:hover {
-        text-decoration: underline;
-    }
-    &__text {
-        margin: 15px auto;
-    }
-
-    &__social-network {
-        margin: 0 10px;
-        & i {
-            font-size: 1.7em;
-        }
-    }
+%mini-text {
+    width: 200px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
-// ! Skils
-.skils {
-    margin-top: 50px;
-    &__sub-title {
-        text-align: center;
-    }
+%mini-title {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-// ! Schedule
-.schedule {
-    margin: 80px 0;
-    &__item {
-        text-align: center;
-    }
-    &__count {
-        font-size: 4em;
-        margin-bottom: 20px;
-        padding: 45px 30px;
-        border-radius: 50%;
-        &--blue {
-            border: 10px solid $color_30bae7;
-            border-top: 10px solid $color_dfe8ed;
-            &:hover {
-                color: $color_30bae7;
-            }
-        }
-        &--red {
-            border: 10px solid $color_d74680;
-            border-left: 10px solid $color_dfe8ed;
-            &:hover {
-                color: $color_d74680;
-            }
-        }
-        &--green {
-            border: 10px solid $color_15c7a8;
-            border-left: 10px solid $color_dfe8ed;
-            &:hover {
-                color: $color_15c7a8;
-            }
-        }
-        &--orange {
-            border: 10px solid $color_eb7d4b;
-            border-top: 10px solid $color_dfe8ed;
-            &:hover {
-                color: $color_eb7d4b;
-            }
-        }
-    }
-    &__sub-title {
-        color: #3c4761;
-    }
+// ! Миксины
+@mixin flex-param($jc, $ai: normal) {
+    // $ Миксин для разных flex нужжд
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
 }
-// ! Our posrtfolio
-.our-portfolio {
-    background-color: #ffdd99;
-    padding: 70px 0;
-    &__sub-title {
-        text-align: center;
-    }
-    &__button {
-        & button {
-            background-color: $color_17c2a4;
-        }
-        & button:hover {
-            background-color: $color_30bae7;
-        }
-        & button:active {
-            text-decoration: underline;
-        }
-    }
-}
-.slider {
-    margin: 50px auto;
-    width: 300px;
-    li {
-        font-size: 18px;
-        line-height: 19px;
-        letter-spacing: 0.02em;
-        color: #393939;
-        transition-duration: 500ms;
-        background-color: $color_ebcc8d;
-        padding: 10px 23px;
-        border-radius: 5px;
-        margin: 0 2px;
-        &:hover {
-            background-color: $wite;
-        }
-    }
-}
-// ! Portfolio
-.portfolio {
-    &__item {
-        margin: 10px 0;
-        & img {
-            width: 500px;
-        }
-    }
-    &__text {
-        margin: 10px 0 50px 0;
-        text-align: center;
-        font-size: 18px;
-        letter-spacing: $ls;
-        color: #393939;
-    }
-}
-// ! Say
-.say {
-    color: $wite;
-    background-color: $color_d74680;
-    &__sub-title {
-        text-align: center;
-    }
-}
-// ! Poeple
-.poeple {
-    &__row {
-        margin: 0 0 100px 0;
-    }
-    &__body {
-        display: flex;
-    }
-    &__circle {
-        width: 99px;
-        height: 99px;
-        margin-right: 20px;
-    }
-
-    &__item {
-        letter-spacing: $ls;
-    }
-
-    &__text {
-        font-size: 21px;
-        line-height: 31px;
-        font-style: italic;
-        width: 330px;
-    }
-
-    &__name {
-        margin: 15px 0px 0;
-    }
-
-    &__specialty {
-        font-size: 18px;
-        line-height: 26px;
-        color: #ffdd99;
-    }
-}
-// ! Touch
-.touch {
-    background-color: $color_344b8e;
-    padding: 70px 0;
-    &__sub-title {
-        text-align: center;
-    }
-}
-// ! Form
-.form {
-    margin-top: 50px;
-    &__row input {
-        width: 390px;
-        height: 56px;
-        background-color: $color_273a71;
-        padding: 14px;
-        margin: 0 25px;
-        color: $wite;
-        border-radius: 5px;
-    }
-    &__textarea {
-        width: 840px;
-        color: $wite;
-        height: 200px;
-        background-color: $color_273a71;
-        margin: 30px auto 0 auto;
-        padding: 10px;
-    }
-    &__button {
-        & button {
-            background-color: $color_30bae7;
-        }
-        & button:hover {
-            background-color: $color_17c2a4;
-        }
-        & button:active {
-            text-decoration: underline;
-        }
-    }
-}
+// ! main 
+@import "main/_hi&head.scss";
+@import "main/_service&provide.scss";
+@import "main/_meet&team.scss";
+@import "main/_skils&schedule.scss";
+@import "main/_portfolio.scss";
+@import "main/_say&people.scss";
+@import "main/_touch&form.scss";
+@import "main/_footer&contact.scss";

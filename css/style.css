@@ -263,26 +263,6 @@ h6 {
     border-radius: 5px;
 }
 
-.footer {
-    background-color: #344b8e;
-    height: 110px;
-}
-
-.contact {
-    padding: 45px 0;
-}
-.contact li a {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    -webkit-transition-duration: 300ms;
-            transition-duration: 300ms;
-}
-.contact li a:hover {
-    color: #30bae7;
-}
-
 .service {
     background-color: #17c2a4;
     text-align: center;
@@ -528,4 +508,24 @@ h6 {
 }
 .form__button button:active {
     text-decoration: underline;
+}
+
+.footer {
+    background-color: #344b8e;
+    height: 110px;
+}
+
+.contact {
+    padding: 45px 0;
+}
+.contact li a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+}
+.contact li a:hover {
+    color: #30bae7;
 }

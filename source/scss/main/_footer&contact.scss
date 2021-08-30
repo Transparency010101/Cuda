@@ -1,0 +1,18 @@
+// ! Footer
+.footer {
+    background-color: $color_344b8e;
+    height: 110px;
+}
+.contact {
+    padding: 45px 0;
+    li a {
+        color: $wite;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: $ls;
+        transition-duration: 300ms;
+    }
+    li a:hover {
+        color: $color_30bae7;
+    }
+}

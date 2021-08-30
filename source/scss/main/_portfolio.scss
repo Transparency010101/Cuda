@@ -1,0 +1,53 @@
+// ! Our posrtfolio
+.our-portfolio {
+    background-color: #ffdd99;
+    padding: 70px 0;
+    &__sub-title {
+        text-align: center;
+    }
+    &__button {
+        & button {
+            background-color: $color_17c2a4;
+        }
+        & button:hover {
+            background-color: $color_30bae7;
+        }
+        & button:active {
+            text-decoration: underline;
+        }
+    }
+}
+.slider {
+    margin: 50px auto;
+    width: 300px;
+    li {
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #393939;
+        transition-duration: 500ms;
+        background-color: $color_ebcc8d;
+        padding: 10px 23px;
+        border-radius: 5px;
+        margin: 0 2px;
+        &:hover {
+            background-color: $wite;
+        }
+    }
+}
+// ! Portfolio
+.portfolio {
+    &__item {
+        margin: 10px 0;
+        & img {
+            width: 500px;
+        }
+    }
+    &__text {
+        margin: 10px 0 50px 0;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: $ls;
+        color: #393939;
+    }
+}

@@ -1,0 +1,42 @@
+// ! Meet
+.meet {
+    background-color: $color_e7f1f8;
+    padding: 100px 0;
+    color: $color_3c4761;
+}
+// ! Team
+.team {
+    margin-top: 80px;
+    &__item {
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $color_3c4761;
+    }
+
+    &__photo {
+        width: 200px;
+        height: 200px;
+    }
+    &__name {
+        margin: 40px 0 15px 0;
+    }
+    &__specialty {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: $ls;
+        color: #30bae7;
+    }
+    &__specialty:hover {
+        text-decoration: underline;
+    }
+    &__text {
+        margin: 15px auto;
+    }
+
+    &__social-network {
+        margin: 0 10px;
+        & i {
+            font-size: 1.7em;
+        }
+    }
+}
