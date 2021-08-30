@@ -436,11 +436,15 @@ h6 {
 .say {
     color: #fff;
     background-color: #d74680;
+    padding: 30px 0;
 }
 .say__sub-title {
     text-align: center;
 }
 
+.poeple {
+    margin-top: 50px;
+}
 .poeple__row {
     margin: 0 0 100px 0;
 }
@@ -473,6 +477,7 @@ h6 {
 }
 
 .touch {
+    color: #fff;
     background-color: #344b8e;
     padding: 70px 0;
 }

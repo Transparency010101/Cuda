@@ -2,12 +2,14 @@
 .say {
     color: $wite;
     background-color: $color_d74680;
+    padding: 30px 0;
     &__sub-title {
         text-align: center;
     }
 }
 // ! Poeple
 .poeple {
+    margin-top: 50px;
     &__row {
         margin: 0 0 100px 0;
     }
