@@ -15,6 +15,7 @@
     }
     &__body {
         display: flex;
+        margin-top: 30px;
     }
     &__circle {
         width: 99px;
@@ -30,7 +31,7 @@
         font-size: 21px;
         line-height: 31px;
         font-style: italic;
-        width: 330px;
+        max-width: 330px;
     }
 
     &__name {
@@ -41,5 +42,18 @@
         font-size: 18px;
         line-height: 26px;
         color: #ffdd99;
+    }
+    @media (max-width: 905px) {
+        &__row {
+            flex-wrap: wrap;
+            margin: 0 0 0 0;
+        }
+        &__body {
+            flex-wrap: wrap;
+            margin: 30px 10px;
+        }
+        &__text {
+            font-size: calc(18px + 3 * ((100vw - 320px) / (1045 - 320)));
+        }
     }
 }

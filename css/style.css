@@ -210,7 +210,7 @@ h6 {
     line-height: 26px;
     letter-spacing: 0.02em;
     margin: auto;
-    width: 650px;
+    max-width: 650px;
 }
 
 .grey-circle {
@@ -485,7 +485,6 @@ h6 {
 }
 .our-portfolio__sub-title {
     text-align: center;
-    max-width: 300px;
 }
 .our-portfolio__button button {
     background-color: #17c2a4;
@@ -565,6 +564,7 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 30px;
 }
 .poeple__circle {
     width: 99px;
@@ -578,7 +578,7 @@ h6 {
     font-size: 21px;
     line-height: 31px;
     font-style: italic;
-    width: 330px;
+    max-width: 330px;
 }
 .poeple__name {
     margin: 15px 0px 0;
@@ -587,6 +587,21 @@ h6 {
     font-size: 18px;
     line-height: 26px;
     color: #ffdd99;
+}
+@media (max-width: 905px) {
+    .poeple__row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: 0 0 0 0;
+    }
+    .poeple__body {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin: 30px 10px;
+    }
+    .poeple__text {
+        font-size: calc(18px + 3 * ((100vw - 320px) / (1045 - 320)));
+    }
 }
 
 .touch {
