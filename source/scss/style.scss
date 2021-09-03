@@ -17,15 +17,17 @@ $color_15c7a8: #15c7a8;
 $color_dfe8ed: #dfe8ed;
 $color_ebcc8d: #ebcc8d;
 $color_273a71: #273a71;
-
-// ! Миксины
-@mixin flex-param($jc, $ai: normal) {
-    // $ Миксин для разных flex нужжд
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
+// ! Основные настройки
+.content {
+    // $ Основной сонтент
+    font-family: "Titillium Web", sans-serif;
+    flex: 1 1 auto;
 }
-// ! Независимые классы
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .container {
     // $ Ограничивающий контейнер
     width: 1045px;
@@ -34,6 +36,14 @@ $color_273a71: #273a71;
         width: 100%;
     }
 }
+// ! Миксины
+@mixin flex-param($jc, $ai: normal) {
+    // $ Миксин для разных flex нужжд
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+// ! Шаблоны
 .pbd {
     padding: 0 15px;
 }
@@ -49,11 +59,7 @@ $color_273a71: #273a71;
     font-weight: 700;
     text-transform: uppercase;
 }
-.content {
-    // $ Основной сонтент
-    font-family: "Titillium Web", sans-serif;
-    flex: 1 1 auto;
-}
+
 .flex-sb-cnt {
     @include flex-param(space-between, center);
 }
@@ -75,11 +81,7 @@ $color_273a71: #273a71;
     transition-duration: 500ms;
     border-radius: 3.5px;
 }
-.wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
 .line {
     // $ Основные свойства линии
     margin: 20px auto;
@@ -90,7 +92,7 @@ $color_273a71: #273a71;
 }
 .title {
     // $ Основные свойства заголовков
-    font-size: 40px;
+    font-size: calc(22px + 14 * ((100vw - 320px) / (1045 - 320)));
     line-height: 29px;
     font-weight: 700;
     letter-spacing: 0.1em;

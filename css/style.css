@@ -94,6 +94,24 @@ h6 {
     font-weight: 400;
 }
 
+.content {
+    font-family: "Titillium Web", sans-serif;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
 .container {
     width: 1045px;
     margin: 0 auto;
@@ -120,13 +138,6 @@ h6 {
     line-height: 18px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.content {
-    font-family: "Titillium Web", sans-serif;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
 }
 
 .flex-sb-cnt {
@@ -178,17 +189,6 @@ h6 {
     border-radius: 3.5px;
 }
 
-.wrapper {
-    min-height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-}
-
 .line {
     margin: 20px auto;
     width: 87px;
@@ -198,7 +198,7 @@ h6 {
 }
 
 .title {
-    font-size: 40px;
+    font-size: calc(22px + 14 * ((100vw - 320px) / (1045 - 320)));
     line-height: 29px;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -322,7 +322,12 @@ h6 {
     padding: 80px 0;
 }
 .service__sub-title {
-    width: 600px;
+    max-width: 600px;
+}
+@media (max-width: 603px) {
+    .service__sub-title {
+        max-width: calc(200px + (600 - 200) * ((100vw - 320px) / (1045 - 320)));
+    }
 }
 
 .provide {
@@ -330,7 +335,7 @@ h6 {
 }
 .provide__item {
     letter-spacing: 0.02em;
-    padding: 0 15px;
+    padding: 15px;
 }
 .provide i {
     font-size: 8em;
@@ -340,7 +345,16 @@ h6 {
     margin: 20px 0;
 }
 .provide__text {
-    margin: auto;
+    margin: 0 auto;
+}
+@media (max-width: 923px) {
+    .provide__row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 
 .meet {
