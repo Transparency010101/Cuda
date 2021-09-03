@@ -15,7 +15,7 @@
         height: 56px;
         background-color: $color_273a71;
         padding: 14px;
-        margin: 0 25px;
+        margin: 20px 25px;
         color: $wite;
         border-radius: 5px;
     }
@@ -36,6 +36,14 @@
         }
         & button:active {
             text-decoration: underline;
+        }
+    }
+    @media (max-width: 843px) {
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__textarea {
+            width: calc(280px + (840 - 280) * ((100vw - 320px) / (1045 - 320)));
         }
     }
 }

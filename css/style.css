@@ -621,7 +621,7 @@ h6 {
     height: 56px;
     background-color: #273a71;
     padding: 14px;
-    margin: 0 25px;
+    margin: 20px 25px;
     color: #fff;
     border-radius: 5px;
 }
@@ -641,6 +641,15 @@ h6 {
 }
 .form__button button:active {
     text-decoration: underline;
+}
+@media (max-width: 843px) {
+    .form__row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .form__textarea {
+        width: calc(280px + (840 - 280) * ((100vw - 320px) / (1045 - 320)));
+    }
 }
 
 .footer {
