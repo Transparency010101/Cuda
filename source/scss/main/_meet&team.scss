@@ -17,7 +17,7 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: $color_3c4761;
-        padding: 10px 0;
+        padding: 10px;
     }
     &__photo {
         width: 200px;
@@ -45,7 +45,7 @@
             font-size: 1.7em;
         }
     }
-    @media (max-width: 800px) {
+    @media (max-width: 824px) {
         &__row {
             flex-wrap: wrap;
             justify-content: center;
