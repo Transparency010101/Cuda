@@ -362,6 +362,12 @@ h6 {
     padding: 100px 0;
     color: #3c4761;
 }
+@media (max-width: 672px) {
+    .meet__sub-title {
+        max-width: calc(200px + (600 - 200) * ((100vw - 320px) / (1045 - 320)));
+        text-align: center;
+    }
+}
 
 .team {
     margin-top: 80px;
@@ -370,6 +376,7 @@ h6 {
     text-align: center;
     letter-spacing: 0.02em;
     color: #3c4761;
+    padding: 10px 0;
 }
 .team__photo {
     width: 200px;
@@ -395,6 +402,15 @@ h6 {
 }
 .team__social-network i {
     font-size: 1.7em;
+}
+@media (max-width: 800px) {
+    .team__row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 
 .skils {

@@ -3,6 +3,12 @@
     background-color: $color_e7f1f8;
     padding: 100px 0;
     color: $color_3c4761;
+    @media (max-width: 672px) {
+        &__sub-title {
+            max-width: calc(200px + (600 - 200) * ((100vw - 320px) / (1045 - 320)));
+            text-align: center;
+        }
+    }
 }
 // ! Team
 .team {
@@ -11,8 +17,8 @@
         text-align: center;
         letter-spacing: 0.02em;
         color: $color_3c4761;
+        padding: 10px 0;
     }
-
     &__photo {
         width: 200px;
         height: 200px;
@@ -37,6 +43,12 @@
         margin: 0 10px;
         & i {
             font-size: 1.7em;
+        }
+    }
+    @media (max-width: 800px) {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
