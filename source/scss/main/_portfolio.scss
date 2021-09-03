@@ -4,6 +4,7 @@
     padding: 70px 0;
     &__sub-title {
         text-align: center;
+        max-width: 300px;
     }
     &__button {
         & button {
@@ -19,7 +20,7 @@
 }
 .slider {
     margin: 50px auto;
-    width: 300px;
+    max-width: 350px;
     li {
         font-size: 18px;
         line-height: 19px;
@@ -29,9 +30,15 @@
         background-color: $color_ebcc8d;
         padding: 10px 23px;
         border-radius: 5px;
-        margin: 0 2px;
+        margin: 0 3px;
         &:hover {
             background-color: $wite;
+        }
+    }
+    @media (max-width: 337px) {
+        li {
+            font-size: 14px;
+            padding: 5px 15px;
         }
     }
 }
@@ -40,7 +47,7 @@
     &__item {
         margin: 10px 0;
         & img {
-            width: 500px;
+            max-width: 100%;
         }
     }
     &__text {
@@ -49,5 +56,11 @@
         font-size: 18px;
         letter-spacing: $ls;
         color: #393939;
+    }
+    @media (max-width: 1000px) {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }
