@@ -671,3 +671,16 @@ h6 {
 .contact li a:hover {
     color: #30bae7;
 }
+@media (max-width: 617px) {
+    .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 0;
+    }
+    .contact li a {
+        margin: 15px;
+    }
+}
