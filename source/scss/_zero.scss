@@ -82,13 +82,20 @@ h6 {
     font-weight: 400;
 }
 // ! Стили для noscript
-// .noscript {
-//     &__title {
-//     }
+.noscript {
+    text-align: center;
+    margin: 200px 150px;
+    background-color: #f00;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    &__title {
+        font-size: 3em;
+        margin: 20px 0;
+    }
 
-//     &__title-sup {
-//     }
-
-//     &__text {
-//     }
-// }
+    &__title-sup {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+}
