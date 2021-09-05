@@ -5,7 +5,7 @@
     border: none;
     outline: none;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 *,
@@ -94,11 +94,28 @@ h6 {
     font-weight: 400;
 }
 
+.noscript {
+    text-align: center;
+    margin: 200px 150px;
+    background-color: #f00;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+.noscript__title {
+    font-size: 3em;
+    margin: 20px 0;
+}
+.noscript__title-sup {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
 .content {
     font-family: "Titillium Web", sans-serif;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 .wrapper {
@@ -108,8 +125,8 @@ h6 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .container {
@@ -145,11 +162,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .flex-center {
@@ -157,11 +174,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .flex-sb {
@@ -169,11 +186,11 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: normal;
-    -ms-flex-align: normal;
-    align-items: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
 }
 
 .button {
@@ -185,7 +202,7 @@ h6 {
     letter-spacing: 0.02em;
     color: #fff;
     -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
+            transition-duration: 500ms;
     border-radius: 3.5px;
 }
 
@@ -252,8 +269,8 @@ h6 {
 
 .header {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 130px;
 }
 @media (max-width: 638px) {
@@ -271,8 +288,7 @@ h6 {
         height: 2px;
         background-color: #fff;
     }
-    .header__burger::before,
-    .header__burger::after {
+    .header__burger::before, .header__burger::after {
         content: "";
         position: absolute;
         left: 0;
@@ -296,7 +312,7 @@ h6 {
     text-transform: uppercase;
     color: #fff;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+            transition-duration: 0.3s;
 }
 .navigation a:hover {
     background-color: #643a79;
@@ -351,10 +367,10 @@ h6 {
 @media (max-width: 923px) {
     .provide__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -407,10 +423,10 @@ h6 {
 @media (max-width: 878px) {
     .team__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -473,10 +489,10 @@ h6 {
 @media (max-width: 815px) {
     .schedule__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -501,19 +517,19 @@ h6 {
     margin: 50px auto;
     max-width: 350px;
 }
-.slider li {
+.slider li a {
     font-size: 18px;
     line-height: 19px;
     letter-spacing: 0.02em;
     color: #393939;
     -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
+            transition-duration: 500ms;
     background-color: #ebcc8d;
     padding: 10px 23px;
     border-radius: 5px;
     margin: 0 3px;
 }
-.slider li:hover {
+.slider li a:hover {
     background-color: #fff;
 }
 @media (max-width: 337px) {
@@ -525,9 +541,13 @@ h6 {
 
 .portfolio__item {
     margin: 10px 0;
+    display: none;
 }
 .portfolio__item img {
     max-width: 100%;
+}
+.portfolio__item:target {
+    display: block;
 }
 .portfolio__text {
     margin: 10px 0 50px 0;
@@ -539,10 +559,10 @@ h6 {
 @media (max-width: 1000px) {
     .portfolio__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -592,12 +612,12 @@ h6 {
 @media (max-width: 905px) {
     .poeple__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 0 0 0 0;
     }
     .poeple__body {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         margin: 30px 10px;
     }
     .poeple__text {
@@ -646,7 +666,7 @@ h6 {
 @media (max-width: 843px) {
     .form__row {
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .form__textarea {
         width: calc(280px + (840 - 280) * ((100vw - 320px) / (1045 - 320)));
@@ -667,7 +687,7 @@ h6 {
     font-weight: 600;
     letter-spacing: 0.02em;
     -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
+            transition-duration: 300ms;
 }
 .contact li a:hover {
     color: #30bae7;
@@ -678,7 +698,7 @@ h6 {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 0;
     }
     .contact li a {
